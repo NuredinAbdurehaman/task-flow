@@ -1,4 +1,3 @@
-// controllers/auth.controller.ts
 import type { Request, Response } from "express";
 import { registerUser ,loginUser} from "../services/auth.service.js";
 
