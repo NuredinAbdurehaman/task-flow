@@ -14,7 +14,7 @@ Frontend application for Task Flow project management system.
 ---
 
 ## 📂 Folder Structure
-
+---
 frontend/
 ├── src/
 │   ├── components/
@@ -22,7 +22,7 @@ frontend/
 │   ├── layouts/
 │   ├── features/
 │   ├── hooks/
-│   ├── services/
+│   ├── api/
 │   ├── store/
 │   ├── types/
 │   ├── lib/
