@@ -1,9 +1,16 @@
+import { BrowserRouter, Routes, Route } from "react-router";
+import Login from "./pages/Login";
+
 function App() {
   return (
     <>
-    <div>Task Flow</div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Login />} />
+        </Routes>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
