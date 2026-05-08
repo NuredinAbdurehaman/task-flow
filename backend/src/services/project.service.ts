@@ -8,3 +8,11 @@ export const createProject = async (userId: string, name: string) => {
     },
   });
 };
+
+export const getProjects = async (userId: string) => {
+  return prisma.project.findMany({
+    where: {
+      ownerId: userId,
+    },
+  });
+};
