@@ -1,15 +1,19 @@
 import { useState } from "react";
 import { login } from "../api/auth";
 import { setToken } from "../lib/storage";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const navigate = useNavigate();
+
   const handleLogin = async () => {
     const data = await login(email, password);
     setToken(data.token);
     alert("Logged in!");
+    navigate("/dashboard");
   };
 
   return (
