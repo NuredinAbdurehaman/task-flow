@@ -12,7 +12,6 @@ export default function Login() {
   const handleLogin = async () => {
     const data = await login(email, password);
     setToken(data.token);
-    alert("Logged in!");
     navigate("/dashboard");
   };
 
